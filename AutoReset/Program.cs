@@ -34,7 +34,8 @@ namespace AutoReset
             Thread.Sleep(TimeSpan.FromSeconds(5));
             Console.WriteLine("메인 스레드에서 5초 대기 후 시그널 보냄");
             mainEvent.Set();
-            Console.WriteLine("메인스레드에서 새로 생성한 스레드의 시그널을 다시 기다림");
+            Console.WriteLine("dd메인스레드에서 새로 생성한 스레드의 시그널을 다시 기다림");
+            Console.WriteLine("DDDDasdsad");
             workEvent.WaitOne();
             
         }
